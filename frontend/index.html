@@ -1,0 +1,63 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Stone • Paper • Scissor</h1>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="score">
+        <h2>You</h2>
+        <p id="user-score">0</p>
+      </div>
+      <div class="score">
+        <h2>Computer</h2>
+        <p id="cpu-score">0</p>
+      </div>
+    </div>
+
+    <!-- Game Buttons -->
+    <div class="choices">
+      <div class="choice" data-choice="stone">
+        <img src="assets/s.jpg" alt="" />
+      </div>
+      <div class="choice" data-choice="paper">
+        <img src="assets/p.jpg" alt="" />
+      </div>
+      <div class="choice" data-choice="Scissor">
+        <img src="assets/r.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Result -->
+    <h2 id="result-text">Make a choice!</h2>
+
+    <!-- Next Round Button -->
+    <button id="next-round" class="hidden">Next Round</button>
+
+    <!-- Rules Button -->
+    <button id="rules-btn" class="rules-btn">Rules</button>
+
+    <!-- Rules Popup -->
+    <div id="rules-popup" class="hidden popup-bg">
+      <div class="rules-box">
+        <button id="close-rules" class="close-btn">X</button>
+        <h2>Game Rules</h2>
+        <ul>
+          <li>Stone beats Scissor</li>
+          <li>Scissor beats Paper</li>
+          <li>Paper beats Stone</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
